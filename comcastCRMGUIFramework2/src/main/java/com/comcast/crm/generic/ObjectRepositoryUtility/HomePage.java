@@ -29,6 +29,9 @@ public class HomePage {
 	@FindBy(linkText = "Campaigns")
 	private WebElement campaignlink;
 	
+	@FindBy(linkText ="Dashboard")
+	private WebElement Dashboardlink;
+	
 	@FindBy(xpath= "//img[@src='themes/softed/images/user.PNG']")
 	private WebElement adminImg;
 	
@@ -46,6 +49,10 @@ public class HomePage {
 	
 	public WebElement getDocumentslink() {
 		return Documentslink;
+	}
+	
+	public WebElement getDashboardlink() {
+		return Dashboardlink;
 	}
 
 	public void setDocumentslink(WebElement documentslink) {
